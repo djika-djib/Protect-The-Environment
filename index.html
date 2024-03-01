@@ -10,6 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="./assets/style.css" />
     <script
       src="https://kit.fontawesome.com/8ca69dc681.js"
@@ -18,52 +19,66 @@
   </head>
   <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand me-auto" href="#">
-          <span class="text-info">Env</span><span>Protection.</span>
-        </a>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand me-auto" href="#"
+          ><span class="text-info">Env</span><span>Protection.</span></a
+        >
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              EnvProtection.
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2 active" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#how-it-works"
+                  >How It Works</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="./contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" class="login-button">Login</a>
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse d-flex justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav text-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#features">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#how-it-works">How It Works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Login/Register</a>
-            </li>
-          </ul>
-        </div>
       </div>
     </nav>
-
     <!-- Navbar End -->
     <!-- Hero Section -->
     <div id="carouselExampleCaptions" class="carousel slide">
@@ -105,7 +120,6 @@
               impact on the environment!
             </p>
             <a href="#" class="btn btn-info">Get Started</a>
-            <!-- Add this line -->
           </div>
         </div>
         <div class="carousel-item">
@@ -165,10 +179,10 @@
     <section id="about">
       <h3 class="feature-heading text-center m-5">About Us</h3>
       <div class="row m-5">
-        <div class="col-6 w-50">
+        <div class="col-lg-6 col-md-12 col-sm-12 w-50">
           <img src="./assets/images/about-us.jpg" alt="" width="600px" />
         </div>
-        <div class="abt-p col-6 py-5">
+        <div class="abt-p col-lg-6 col-md-12 col-sm-12 py-5">
           <p>
             EnvProtection is a platform dedicated to empowering individuals and
             communities to protect the environment. We believe that everyone has
@@ -284,26 +298,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="row">
-          <div class="col-md-12">
-            <h3>Benefits</h3>
-            <ul>
-              <li>
-                Save time and effort by reporting waste disposal issues from
-                your phone.
-              </li>
-              <li>
-                Contribute to a cleaner environment by taking action in your
-                community.
-              </li>
-              <li>
-                Stay informed with real-time updates on disposal site
-                activities.
-              </li>
-            </ul>
-            <a href="#" class="btn btn-primary">Get Started</a>
-          </div>
-        </div> -->
       </div>
     </section>
     <!-- End -->
@@ -343,3 +337,5 @@
     ></script>
   </body>
 </html>
+
+<!-- Unsplash -->

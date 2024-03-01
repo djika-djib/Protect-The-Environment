@@ -1,3 +1,50 @@
+/* Navbar */
+.login-button {
+  background-color: teal;
+  color: white;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+.login-button:hover {
+  background-color: rgb(38, 203, 186);
+}
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+.nav-link {
+  color: #666777;
+  font-weight: 500;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #000;
+}
+/* .nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: teal;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+.nav-link:hover::before {
+  width: 100%;
+  visibility: visible;
+} */
+/* End */
+
 .abt-p {
   text-align: justify;
 }
@@ -39,7 +86,7 @@ textarea {
   resize: vertical;
 }
 
-button {
+.form-button {
   background-color: teal;
   color: #fff;
   padding: 10px 20px;
@@ -48,8 +95,8 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  background-color: orangered;
+.form-button:hover {
+  background-color: rgb(38, 203, 186);
 }
 .banner img {
   width: 100%;
